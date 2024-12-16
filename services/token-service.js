@@ -21,7 +21,7 @@ class tokenService {
     }
 
     async findToken(refreshToken) {
-        return Token.findOne({refreshToken});
+        return Token.findOne({refreshToken}).populate("user");
     }
 
     verifyAccessToken(accessToken) {

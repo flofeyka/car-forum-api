@@ -38,6 +38,19 @@ class authService {
         return {user: new UserDto(userFound), accessToken, refreshToken};
     }
 
+    async refresh(currentRefreshToken) {
+        const tokenData = await tokenService.findToken(currentRefreshToken);
+
+        if (!tokenData) {
+            throw ApiError.unAuthorized();
+        }
+
+        const {accessToken, refreshToken} = tokenService.generateTokens(tokenData.user);
+        await tokenService.saveToken(refreshToken, tokenData.user._id);
+
+        return {user: new UserDto(tokenData.user), accessToken, refreshToken};
+    }
+
     async logout(refreshToken) {
         const result = await tokenService.deleteToken(refreshToken);
         if (result.deletedCount === 0) {

@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01162041-e7ca-41be-a0b0-949dcea6d2e4" name="Changes" comment="" />
+    <list default="true" id="01162041-e7ca-41be-a0b0-949dcea6d2e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/forum-controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/message-controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtos/forum-dto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/access-middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/forum-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/forum-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/message-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions/api-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/api-error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/token-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/token-service.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +35,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/node_modules/jsonwebtoken/sign.js" root0="SKIP_INSPECTION" />
   </component>
@@ -28,20 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Freelance/car-forum-api&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Projects/Freelance/car-forum-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -58,7 +81,9 @@
       <option name="presentableId" value="Default" />
       <updated>1734261522936</updated>
       <workItem from="1734261525044" duration="4942000" />
-      <workItem from="1734269240551" duration="2875000" />
+      <workItem from="1734269240551" duration="4947000" />
+      <workItem from="1734274964374" duration="2506000" />
+      <workItem from="1734346316273" duration="618000" />
     </task>
     <servers />
   </component>
