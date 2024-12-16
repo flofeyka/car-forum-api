@@ -8,7 +8,7 @@ class authController {
                 httpOnly: true,
                 secure: true,
                 maxAge: 15 * 24 * 60 * 60 * 1000,
-                sameSite: false
+                sameSite: "none"
             });
             return res.json(result);
         } catch (e) {
@@ -23,7 +23,7 @@ class authController {
                 httpOnly: true,
                 secure: true,
                 maxAge: 15 * 24 * 60 * 60 * 1000,
-                sameSite: false
+                sameSite: 'none'
             });
             return res.json(result);
         } catch (e) {
@@ -38,7 +38,7 @@ class authController {
                 httpOnly: true,
                 secure: true,
                 maxAge: 15 * 24 * 60 * 60 * 1000,
-                sameSite: false
+                sameSite: 'none'
             });
 
             return res.json(result);
