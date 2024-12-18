@@ -1,6 +1,7 @@
 import Forum from "../models/Forum.js";
 import ApiError from "../exceptions/api-error.js";
 import Message from "../models/Message.js";
+import {MessageDto} from "../dtos/message-dto.js";
 
 class messageService {
     async createMessage(forum_id, message, user_id) {
@@ -9,14 +10,15 @@ class messageService {
             throw ApiError.notFound('Forum not found');
         }
 
-        const newMessage = await Message.create({message, user: user_id, forum: forum_id});
+        const newMessage = await Message.create({message, user: user_id, forum: forum_id})
         await Forum.updateOne({_id: forum._id}, {
             $push: {
                 messages: newMessage._id
             }
         })
 
-        return newMessage;
+        const messageFound = await Message.findById(newMessage._id).populate('user');
+        return new MessageDto(messageFound);
     }
 
     async deleteMessage(message_id) {
