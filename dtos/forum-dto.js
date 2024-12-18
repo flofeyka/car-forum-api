@@ -1,4 +1,5 @@
 import UserDto from "./user-dto.js";
+import {MessageDto} from "./message-dto.js";
 
 export default class ForumDto {
     _id;
@@ -10,6 +11,6 @@ export default class ForumDto {
         this._id = forum._id;
         this.title = forum.title;
         this.user = forum.user?.email && new UserDto(forum.user);
-        this.messages = forum.messages.length > 0 ? forum.messages[0]?.message && forum.messages : undefined;
+        this.messages = forum.messages?.map(message => new MessageDto(message));
     }
 }
