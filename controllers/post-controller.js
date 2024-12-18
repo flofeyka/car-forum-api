@@ -12,7 +12,7 @@ class postController {
 
     async updatePost(req, res, next) {
         try {
-            const result = await postService.updatePost(req.body);
+            const result = await postService.updatePost(req.params.id, req.body);
             return res.json(result);
         } catch(e) {
             next(e);
