@@ -8,8 +8,13 @@ class postService {
         return new PostDto(post);
     }
 
-    async updatePost({_id, title, content}) {
-        return Post.updateOne({_id}, {title, content}, {new: true});
+    async updatePost(_id, {title, content}) {
+        const updateResult = await Post.updateOne({_id}, {title, content});
+        if(updateResult.modifiedCount !== 1) {
+            throw ApiError.notFound("Post not found");
+        }
+
+        return {success: true, message: "Post successfully updated"};
     }
 
     async deletePost(_id) {
