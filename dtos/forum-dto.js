@@ -11,6 +11,6 @@ export default class ForumDto {
         this._id = forum._id;
         this.title = forum.title;
         this.user = forum.user?.email && new UserDto(forum.user);
-        this.messages = forum.messages?.map(message => new MessageDto(message));
+        this.messages = forum.messages.length > 0 && forum.messages[0]?.message && forum.messages?.map(message => new MessageDto(message));
     }
 }
